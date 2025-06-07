@@ -1,0 +1,8 @@
+.pageRoot {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: #181a1b;
+  color: #fff;
+  overflow: hidden;
+}

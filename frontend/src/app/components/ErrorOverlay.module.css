@@ -1,0 +1,19 @@
+.errorOverlay {
+  position: fixed;
+  top: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ff6b6b;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  z-index: 200;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+  animation: fadeInDown 0.7s;
+}
+
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(-40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

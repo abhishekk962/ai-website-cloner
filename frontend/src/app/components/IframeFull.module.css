@@ -1,0 +1,80 @@
+.iframeFull {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  transition: filter 0.3s;
+}
+.iframeFadeWrapper {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: transparent;
+  animation: fadeIframeIn 0.5s;
+}
+@keyframes fadeIframeIn {
+  0% { opacity: 0.2; }
+  100% { opacity: 1; }
+}
+.iframe {
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  background: #fff;
+  border-radius: 0;
+  display: block;
+  transition: box-shadow 0.3s;
+}
+.iframeCrossfadeWrapper {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: transparent;
+}
+.iframeFadeOld {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  pointer-events: none;
+  transition: opacity 0.4s cubic-bezier(.4,0,.2,1);
+  z-index: 1;
+  animation: fadeOutIframe 0.4s forwards;
+}
+.iframeFadeNew {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+  animation: fadeInIframe 0.4s forwards;
+}
+.iframeFadeShow {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 2;
+}
+@keyframes fadeInIframe {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadeOutIframe {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}

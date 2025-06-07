@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: backend
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi[standard]>=0.115.12
+Requires-Dist: celery>=5.0.0
+Requires-Dist: redis>=4.0.0
+Requires-Dist: selenium>=4.33.0
+Requires-Dist: hyperbrowser>=0.45.1
+Requires-Dist: pydantic-settings>=2.9.1

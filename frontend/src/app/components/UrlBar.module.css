@@ -1,0 +1,43 @@
+.urlBar {
+  position: fixed;
+  left: 50%;
+  bottom: 3vh;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(24,26,27,0.92);
+  border-radius: 32px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+  padding: 0.5rem 1.2rem;
+  z-index: 30;
+  min-width: 320px;
+}
+.urlInput {
+  width: 220px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: none;
+  background: #23272a;
+  color: #fff;
+  outline: none;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+}
+.urlButton {
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: none;
+  background: #0070f3;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.urlButton:disabled {
+  background: #444;
+  cursor: not-allowed;
+}
